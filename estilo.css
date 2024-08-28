@@ -168,22 +168,6 @@ main{
 	justify-content: space-evenly;
 }
 
-footer{
-	background-color: #D49F5D;
-	padding: 30px;
-	display: flex;
-}
-
-footer p{
-	font: 1.5rem "Montserrat", sans-serif; ;
-	color: #FFF;
-}
-
-footer img{
-	width: 30px;
-	height: 30px;
-	align-items: center;
-}
 footer {
     background-color: #D49F5D;
     padding: 40px;
