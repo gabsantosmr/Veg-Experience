@@ -156,7 +156,8 @@ footer {
 }
 
 #slogan {
-    font-size: x-large;
+    font-size: large;
+    font: 1.5rem "Montserrat", sans-serif; 
     width: 60%;
     text-align: center;
     color: #ffffff;
@@ -171,17 +172,20 @@ footer {
 }
 
 #i {
-    width: 40px;
+    width: 60px;
     height: 100%;
 }
 
 #y {
-    width: 50px;
+    width: 60px;
 }
 
 #copyright p {
     margin-top: 40px;
     text-align: center;
+    color: white;
+    font: 1rem "Montserrat", sans-serif; 
+    font-size: larger;
 }
 
 /* Página Home */
