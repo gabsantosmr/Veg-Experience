@@ -246,6 +246,10 @@ main, #pag-noticias, #pag-pilares, #pag-historia {
 	text-align: center;
 }
 
+.p-pilares {
+    margin-bottom: 30px;
+}
+
 #container-pilares{
 	display: flex;
 	justify-content: space-between;
@@ -315,6 +319,7 @@ main, #pag-noticias, #pag-pilares, #pag-historia {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
 	padding-left: 100px;
+    align-items: center;
 }
 
 .coluna-historia {
