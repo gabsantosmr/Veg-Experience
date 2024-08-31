@@ -1,3 +1,3 @@
 # Veg Experience
 
-Repositório para colocar as informações do site veg experience
+Repositório para depositar as informações do site veg experience, desenvolvido por: Ana Paula Pereira Ribeiro, Gabriel dos Santos Mota Rodrigues e Gustavo Santos Novaes
