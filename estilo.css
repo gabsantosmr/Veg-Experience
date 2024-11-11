@@ -1,0 +1,275 @@
+*{padding: 0px; margin: 0px;};
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+
+}
+
+header, #img-banner{
+	width: 100%;
+	height: px;
+	background-color: #D49F5D;
+}
+
+#logo-menu{
+	width: 20vh;
+	display: flex;
+	align-items: center;
+}
+
+.container-menu{
+	clear: both;
+	display: flex;
+	align-items: center;
+}
+
+nav{
+	width: 100%;
+	background-color: #f2f2f2;
+	text-align: right;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 5;
+}
+
+a{
+	text-decoration: none;
+	
+}
+
+.a-menu{
+	text-decoration: none;
+	font: 1.2rem "Montserrat", sans-serif; 
+	color: #000;
+	margin-right: 40px;
+}
+
+#link-eventos{
+	font: 1.2rem "Montserrat", sans-serif; 
+	color: #FFF;
+	background-color: #71842A;
+	border: 2px solid #C4C4C4;
+	margin-right: 40px;
+	padding: 10px;
+}
+
+h1{
+	font: 1.5rem "Montserrat", sans-serif; 
+	font-weight: 600;
+	margin-bottom: 10px;	
+}
+
+h2{
+	font: 2rem "Montserrat", sans-serif; 
+	font-weight: 600;
+	margin-bottom: 1.2rem;
+	margin-top: 1.2rem;
+}
+
+main, #pag-noticias, #pag-quemsomos, #pag-pilares, #pag-historia{
+	padding: 100px;
+}
+
+main{
+	background-color: #D49F5D;
+	font: 1.4rem "Montserrat", sans-serif; 
+	line-height: 30px;
+	display: flex;
+	border-bottom: 10px solid #71842A;
+	text-align: center;
+}
+
+#texto-noticia{
+	width: 40%;
+	text-align: justify;
+	position: relative;
+	left: 130px;
+}
+
+#foto-noticia{
+	width: 600px;
+	height: 450px;
+	object-fit: cover;
+}
+
+#pag-quemsomos{
+	background-color: #B84C32;
+	font: 1.2rem "Montserrat", sans-serif; 
+	color: #FFF;
+	text-align: justify;
+	line-height: 30px;
+	display: flex;
+	border-bottom: 10px solid #D49F5D;
+	padding: 200px 100px 200px;
+}
+
+#txt-quemsomos{
+	width: 45%;
+}
+
+#foto-quemsomos{
+	width: 600px;
+	height: 450px;
+	position:relative;
+	left: 130px;
+	object-fit: cover;
+}
+
+#pag-pilares{
+	font: 1.2rem "Montserrat", sans-serif; 
+	text-align: justify;
+	line-height: 30px;
+	border-bottom: 10px solid#71842A;
+}
+
+#pag-pilares h2{
+	text-align: center;
+}
+
+#container{
+	display: flex;
+	justify-content: space-between;
+	padding: 60px 60px;
+}
+
+.img-card{
+	width: 100%;
+	height: 200px;	
+	object-fit: cover;
+}
+
+#card{
+	background-color: #B84C32;
+	width: 25%;
+	box-shadow: 0px 2px 8px;
+}
+
+#card2{
+	background-color: #D49F5D;
+	width: 25%;
+	box-shadow: 0px 2px 8px;
+}
+
+#card3{
+	background-color: #71842A;
+	width: 25%;
+	box-shadow: 0px 2px 8px;
+}
+
+.card-texto{
+	font: 1.5rem "Montserrat", sans-serif; 
+	color: #FFF;
+	text-align: center;
+	padding: 20px;
+}
+
+#pag-historia{
+	background-color: #B84C32;
+	font: 1.2rem "Montserrat", sans-serif; 
+	color: #FFF;
+	text-align: justify;
+	line-height: 30px;
+	border-bottom: 10px solid #D49F5D;
+	display: flex
+}
+
+#texto-historia{
+	width: 50%;
+}
+
+/*#container-historia{
+	display: flex;
+}*/
+
+.grid-container {
+	width: 40%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+	padding-left: 100px;
+}
+
+.grid-item {
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorcer */
+    transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.1); 
+}
+
+#pag-apoiadores{
+	background-color: #fff;
+	padding: 50px;
+}
+
+
+#pag-apoiadores img{
+	max-width: 25vh;
+}
+
+#pag-apoiadores h2{
+	text-align: center;
+	padding-bottom: 2vh;
+}
+
+#container-apoiadores{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+}
+
+#botao-whatsapp{
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+}
+
+footer {
+    background-color: #D49F5D;
+    padding: 40px;
+}
+#content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    width: 15%;
+}
+#slogan {
+    width: 70%;
+    text-align: center;
+    color: #ffffff;
+}
+#redes {
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#redes img {
+    width: 40px;
+}
+
+@media only screen and (max-width: 360px){
+	nav p{font: 1.9rem "Montserrat", sans-serif; 
+	}
+
+	main{
+		width: 100%;
+	}
+}

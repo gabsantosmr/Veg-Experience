@@ -1,91 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="uft-8" />
-    <meta name="description" content="Falamos sobre longevidade sustentável através de 13 dos 17 Objetivos do Desenvolvimento Sustentável da Agenda 2030 da ONU.
-    Promovemos  eventos interativos que buscam incentivar e conscientizar sobre a  importância da prática da atividade física e da alimentação a base de  plantas, associado com ações sustentáveis cotidianas.">
-    <meta name="author" content="Ana Paula Pereira Ribeiro, Gabriel dos Santos Mota Rodrigues e Gustavo Santos Novais">
-    <meta name="keywords" content="Veg Experience, Veganismo, Sustentabilidade, Consciente, Longevidade Sustentável, Atividade física, alimentação a base de plantas">
-    <title>Login - Veg Experience</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+	<head>
+		<meta charset="uft-8" />
+		<meta name="description" content="Falamos sobre longevidade sustentável através de 13 dos 17 Objetivos do Desenvolvimento Sustentável da Agenda 2030 da ONU.
+		Promovemos  eventos interativos que buscam incentivar e conscientizar sobre a  importância da prática da atividade física e da alimentação a base de  plantas, associado com ações sustentáveis cotidianas.">
+		<meta name="author" content="Ana Paula Pereira Ribeiro, Gabriel dos Santos Mota Rodrigues e Gustavo Santos Novais">
+		<meta name="keywords" content="Veg Experience, Veganismo, Sustentabilidade, Consciente, Longevidade Sustentável, Atividade física, alimentação a base de plantas">
+		<title>Login - Veg Experience</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
 
-     <!-- Menu -->
-	<nav>
-        <!-- Logo da Veg Experience localizado no menu -->
-		<a href="index.html">
-            <img id="logo-menu" src="img/logo-veg.png" alt="logo da Veg Experience"/> 
-        </a>
+		 <!-- Menu -->
+		<nav>
+			<!-- Logo da Veg Experience localizado no menu -->
+			<a href="index.html">
+				<img id="logo-menu" src="img/logo-veg.png" alt="logo da Veg Experience"/> 
+			</a>
 
-        <!-- Navegação -->
-		<div id="navegacao">
-			<a class="a-menu" href="index.html">HOME</a>
-			<a class="a-menu"  href="index.html#pag-quemsomos">QUEM SOMOS</a>
-			<a class="a-menu"  href="index.html#pag-pilares">PILARES</a>
-			<a class="a-menu"  href="index.html#pag-historia">HISTÓRIA</a>
-			<a class="button" id="link-eventos" href="event.html">EVENTOS</a>
-		</div>
-	</nav>
+			<!-- Navegação -->
+			<div id="navegacao">
+				<a class="a-menu" href="index.html">HOME</a>
+				<a class="a-menu"  href="index.html#pag-quemsomos">QUEM SOMOS</a>
+				<a class="a-menu"  href="index.html#pag-pilares">PILARES</a>
+				<a class="a-menu"  href="index.html#pag-historia">HISTÓRIA</a>
+				<a class="button" id="link-eventos" href="event.html">EVENTOS</a>
+			</div>
+		</nav>
 
-<!-- Seta para voltar para a página anterior -->
-	<a class="setinha" href="login.html">
-        <img src="img/seta.png">
-    </a>
+		<!-- Página de Cadastro -->
+		<section id="pag-login">
 
-    <!-- Página de Cadastro -->
-	<section id="pag-login">
+				<h1>CADASTRO</h1>
 
-			<h1>CADASTRO</h1>
+				<form name="" method="" action="">
 
-			<form name="" method="" action="">
+					<!-- Campo: nome -->
+					<label for="name">NOME COMPLETO:</label>
+					<input id="name" type="nomeusuario" name="nome" placeholder="Digite seu nome" />
 
-                <!-- Campo: nome -->
-				<label for="name">NOME COMPLETO:</label>
-				<input id="name" type="nomeusuario" name="nome" placeholder="Digite seu nome" />
+					<!-- Campo: cpf -->
+					<label for="CPF">CPF:</label>
+					<input id="CPF" type="CPF" name="CPF" placeholder="Digite seu cpf" />
 
-				<!-- Campo: cpf -->
-                <label for="CPF">CPF:</label>
-				<input id="CPF" type="CPF" name="CPF" placeholder="Digite seu cpf" />
+					<!-- Campo: e-mail -->
+					<label for="email">E-MAIL:</label>
+					<input id="email" type="email" name="email" placeholder="nomeusuario@email.com" />
 
-                <!-- Campo: e-mail -->
-		    	<label for="email">E-mail:</label>
-				<input id="email" type="email" name="email" placeholder="nomeusuario@email.com" />
+					<!-- Campo: senha -->
+					<label for="senha">SENHA:</label>
+					<input id="senha" type="password" name="senha" placeholder="somente números" />
 
-                <!-- Campo: senha -->
-				<label for="senha">Senha:</label>
-				<input id="senha" type="password" name="senha" placeholder="somente números" />
+					<!-- Campo: confirmar senha -->
+					<label for="confirme senha">CONFIRMAR SENHA:</label>
+					<input id="senha" type="password" name="senha" placeholder="somente números" />
 
-                <!-- Campo: confirmar senha -->
-				<label for="confirme senha">Confirme Senha:</label>
-				<input id="senha" type="password" name="senha" placeholder="somente números" />
+					<!-- Botão de enviar e cancelar -->
+					<div id="botoes-form">
+						<input type="submit" name="bnt-ENVIAR" value="ENVIAR" />
+						<input type="reset" name="bnt-CANCELAR" value="CANCELAR" />
+					</div> 
 
-                <!-- Botão de enviar e cancelar -->
-				<div id="botoes-form">
-					<input href="event.html" type="submit" name="bnt-ENVIAR" value="ENVIAR" />
-					<input type="reset" name="bnt-CANCELAR" value="CANCELAR" />
-			    </div> 
-
-                <!-- Botão de entrar com google e com email -->
-			    <div class="alternative-login">
-                    <button class="google-btn"><img id="icon-google" src="img/google-icon.png">Continuar com Google</button>
-                    <button class="email-btn"><img id="icon-email" src="img/email-icon.png">Continuar com e-mail</button>
-                </div> 
-				
-			</form>
-		</section>
-       <footer>
-        <div id="content">
-            <div id="logo-rodape"><img src="img/logo-rodape.jpg" alt=""><p>VEG EXPERIENCE</p></div>
-            <h2 id="slogan">O FUTURO É CONSCIENTE E SUSTENTÁVEL</h2>
-            <div id="redes">
-                <a href="https://www.instagram.com/experience.veg/" target="_blank"><img id="i" src="img/instagram.png" alt=""></a>
-                <a href="https://www.youtube.com/@vegexperience" target="_blank"><img id="y" src="img/youtube.png" alt=""></a>
-            </div>
-        </div>
-        <div id="copyright">
-            <p>© 2024 - Veg Experience</p>
-        </div>
-    </foote>
-</body>
+					<!-- Botão de entrar com google e com email -->
+					<div class="alternative-login">
+						<button class="google-btn"><img id="icon-google" src="img/google-icon.png">Continuar com Google</button>
+						<button class="email-btn"><img id="icon-email" src="img/email-icon.png">Continuar com e-mail</button>
+					</div> 
+					
+					<p><a href=login.html>LOGIN</a></p>
+				</form>
+			</section>
+			<footer>
+				<div id="content">
+					<div id="logo-rodape">
+						<img id="logo-footer" src="img/logo-rodape.jpg" alt=""><p>VEG EXPERIENCE</p>
+					</div>
+					<h2 id="slogan">O FUTURO É CONSCIENTE E SUSTENTÁVEL</h2>
+					<div id="redes">
+						<a href="https://www.instagram.com/experience.veg/" target="_blank"><img id="instagram" src="img/instagram.png" alt=""></a>
+						<a href="https://www.youtube.com/@vegexperience" target="_blank"><img id="youtube" src="img/youtube.png" alt=""></a>
+					</div>
+				</div>
+				<div id="copyright">
+					<p>© 2024 - Veg Experience</p>
+				</div>
+			</footer>
+	</body>
 </html>
