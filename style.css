@@ -73,6 +73,10 @@ nav{
     z-index: 1;
 }
 
+ul{
+    list-style-type: none;
+}
+
 #navegacao {
     display: flex;
     align-items: center;
