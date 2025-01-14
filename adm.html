@@ -20,13 +20,13 @@
         </a>
 
         <!-- Navegação -->
-        <div id="navegacao">
-            <a class="a-menu" href="index.html">HOME</a>
-            <a class="a-menu" href="index.html#pag-quemsomos">QUEM SOMOS</a>
-            <a class="a-menu" href="index.html#pag-pilares">PILARES</a>
-            <a class="a-menu" href="index.html#pag-historia">HISTÓRIA</a>
-            <a class="button" id="buttonsearch"><img id="searchimg" src="img/search.png" alt="Icone de lupa"></a>
-        </div>
+        <ul id="navegacao">
+            <li><a class="a-menu" href="">HOME</a></li>
+            <li><a class="a-menu"  href="#pag-quemsomos">QUEM SOMOS</a></li>
+            <li><a class="a-menu"  href="#pag-pilares">PILARES</a></li>
+            <li><a class="a-menu"  href="#pag-historia">HISTÓRIA</a></li>
+            <li><a class="button" id="link-eventos" href="event.html">EVENTOS</a></li>
+        </ul>
         
     </nav>
     
@@ -35,11 +35,13 @@
         <form id="formevento">
             <p>Nome do evento:</p>
             <input type="text" id="nomeevento" placeholder="Nome do evento" required>
+            <p>Imagem de destaque:</p>
+            <input type="file" accept="image/png, image/jpeg" id="campoimagem" required>
             <p>Data de inicio:</p>
             <input type="datetime-local" id="datainicio" required>
             <p>Data de fim:</p>
             <input type="datetime-local" id="datafinal" required>
-            <button type="submit">Cadastrar evento</button>
+            <button type="submit" onsubmit="CadastrarEvento()">Cadastrar evento</button>
         </form>
     </main>
     <footer>
@@ -55,6 +57,6 @@
             <p>© 2024 -  Veg Experience</p>
         </div>
     </footer>
-    <a class="button" id="inscrevase" href="login.html"><img src="img/inscrevase.png" alt=""></a>
 </body>
+<script src="script.js"></script>
 </html>
