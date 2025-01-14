@@ -196,7 +196,7 @@ footer {
     font-size: larger;
 }
 
-/*Indez*/
+/*Index*/
 
 /* Banner */
 #img-banner {
@@ -516,6 +516,8 @@ aside {
 /* Cards pequenos */
 .outros {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
     margin-bottom: 50px;
 }
@@ -534,7 +536,8 @@ aside {
 }
 
 .card {
-    width: 30%;
+    flex: 1 1 calc(33.333% - 16px);
+    max-width: calc(33.333% - 16px);
 }
 
 .card img {
