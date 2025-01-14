@@ -518,7 +518,7 @@ aside {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
