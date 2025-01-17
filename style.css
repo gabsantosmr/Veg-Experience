@@ -63,16 +63,38 @@ p {
 }
 
 /* Navegação */
-nav{
+#nav-index{
 	width: 100%;
-	background-color: #f2f2f2;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .5s;
+}
+
+#nav {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	position: sticky;
     top: 0;
+    left: 0;
     z-index: 1;
+}
+
+#nav-index.rolagem {
+    background-color: rgb(240, 240, 240);
+}
+
+#nav-index.rolagem .a-menu {
+    color: #000;
 }
 
 ul{
@@ -84,8 +106,15 @@ ul{
     align-items: center;
 }
 
-.a-menu{
+#nav-index .a-menu{
 	text-decoration: none;
+	font: 1.2rem "Montserrat", sans-serif; 
+	color: #fff;
+	margin-right: 40px;
+}
+
+#nav .a-menu {
+    text-decoration: none;
 	font: 1.2rem "Montserrat", sans-serif; 
 	color: #000;
 	margin-right: 40px;

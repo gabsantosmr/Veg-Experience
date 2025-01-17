@@ -7,3 +7,8 @@ function CadastrarEvento() {
     "<div class='card'><img src='" + imagem + "' alt=''><div class='descricao2'><h3>" + nome + "</h3><p>" + inicio + " - " + fim + "</p></div></div>";
 
 }
+
+window.addEventListener("scroll", function() {
+    let menu = this.document.querySelector('#nav-index')
+    menu.classList.toggle('rolagem',window.scrollY > 710)
+})
