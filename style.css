@@ -241,7 +241,7 @@ main, #pag-noticias, #pag-pilares, #pag-historia {
 
 /* seção de notícias do site */
 #pag-noticias {
-	background-color: #D49F5D;
+	background-color: #f8f8f8;
 	display: flex;
     justify-content: space-between;
     align-items: center;
@@ -283,8 +283,8 @@ main, #pag-noticias, #pag-pilares, #pag-historia {
 
 /* Seção de Pilares */
 #pag-pilares{
-	background-color: #FFF;
-	border-bottom: 10px solid #71842A;
+	background-color: #F8f8f8;
+	border-bottom: 10px solid #B84C32;
 }
 
 #pag-pilares h2{
@@ -348,7 +348,7 @@ main, #pag-noticias, #pag-pilares, #pag-historia {
 
 /* Seção História */
 #pag-historia{
-	background-color: #B84C32;
+	background-color: #71842A;
 	color: #FFF;
 	border-bottom: 10px solid #D49F5D;
 	display: flex;
