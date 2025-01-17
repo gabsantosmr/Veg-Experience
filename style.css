@@ -393,12 +393,22 @@ main, #pag-noticias, #pag-pilares, #pag-historia {
 	margin: 0 auto;
 }
 
-/* Botão flutuante Whatsapp */
-#botao-whatsapp{
-	width: 15vh;
-	position: fixed;
+/* Botão flutuante Whatsapp e Instagram */
+#whatsapp-e-instagram {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
 	bottom: 40px;
 	right: 20px;
+}
+#botao-whatsapp{
+	width: 100px;
+
+}
+#botao-instagram {
+    width: 60px;
+    border-radius: 30%;
 }
 
 /* Botão flutuante inscreva-se */
