@@ -13,7 +13,19 @@ body {
 	font: 1.2rem "Montserrat", sans-serif; 
 	color: #FFF;
 	background-color: #71842A;
-	padding: 10px;
+    margin: 0vh 1vh;
+    padding: 2vh;
+    border-radius: 0.5vh;
+}
+
+.button:hover{
+    box-shadow: 8px 8px 10px #c4c4c4;
+    transition: 0.5s;
+}
+
+.button:active{
+    transform: translateY(4px);
+    box-shadow: 0 2px #ccc; 
 }
 
 .button-desative{
@@ -41,7 +53,7 @@ h2{
 /* Titulos dos eventos */
 h3 {
     font: 1.5rem "Montserrat", sans-serif; 
-    font-weight: 600;
+    font-weight: 600px;
 }
 
 /* links */
@@ -58,13 +70,13 @@ p {
 /* menu */
 #logo-menu {
     width: 20vh;
+    padding-left: 4vh;
 }
 
 /* Navegação */
 nav{
 	width: 100%;
 	background-color: #f2f2f2;
-	padding: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -73,11 +85,21 @@ nav{
     z-index: 1;
 }
 
-ul{
-    list-style-type: none;
+ul {
+    list-style: none;
 }
 
-#navegacao {
+li .a-menu{
+    line-height: 15vh;
+    display: inline-block;
+}
+
+li:hover, .a-menu:hover {
+    color: #FFF;
+    background-color: #CCC;
+}
+
+.navegacao {
     display: flex;
     align-items: center;
 }
@@ -86,7 +108,7 @@ ul{
 	text-decoration: none;
 	font: 1.2rem "Montserrat", sans-serif; 
 	color: #000;
-	margin-right: 40px;
+    margin: 0vh 2vh;
 }
 
 /* botão para a página de eventos */
