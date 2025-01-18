@@ -13,7 +13,6 @@ body {
 	font: 1.2rem "Montserrat", sans-serif; 
 	color: #FFF;
 	background-color: #71842A;
-    margin: 0vh 1vh;
     padding: 2vh;
     border-radius: 0.5vh;
 }
@@ -117,20 +116,33 @@ li:hover, .a-menu:hover {
 }
 
 /* botão de procurar da página de eventos */
-#buttonsearch {
-    padding: 5px;
+
+#search{
+    width: 10%;
+    margin: 0px;
     display: flex;
     align-items: center;
-    border-radius: 50%;
-    margin-right: 40px;
 }
 
-#buttonsearch:hover {
-    cursor: pointer;
+#buttonsearch {
+    background-color: #71842A;
+    border: none;
+    height: 35px;
+    border-radius: 0vh  0.5vh 0.5vh 0vh;
+    text-decoration: none;
 }
 
 #searchimg {
-    width: 45px;
+   width: 4vh;
+}
+
+#input_search{
+    width: 200px;
+    height: 35px;
+    font: 0.8rem "Montserrat", sans-serif; 
+    align-items: center;
+    border-radius:  0.5vh  0vh 0vh 0.5vh;
+    margin: 0px;
 }
 
 #botão-ingressos {

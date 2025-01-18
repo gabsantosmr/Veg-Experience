@@ -7,6 +7,7 @@
     <meta name="author" content="Ana Paula Pereira Ribeiro, Gabriel dos Santos Mota Rodrigues e Gustavo Santos Novais">
     <meta name="keywords" content="Veg Experience, Veganismo, Sustentabilidade, Consciente, Longevidade Sustentável, Atividade física, alimentação a base de plantas">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Eventos - Veg Experience</title>
 </head>
 <body>
@@ -20,13 +21,17 @@
         </a>
 
         <!-- Navegação -->
-        <div id="navegacao">
-            <a class="a-menu" href="index.html">HOME</a>
-            <a class="a-menu" href="index.html#pag-quemsomos">QUEM SOMOS</a>
-            <a class="a-menu" href="index.html#pag-pilares">PILARES</a>
-            <a class="a-menu" href="index.html#pag-historia">HISTÓRIA</a>
-            <a class="button" id="buttonsearch"><img id="searchimg" src="img/search.png" alt="Icone de lupa"></a>
-        </div>
+        <ul class="navegacao">
+            <li><a class="a-menu" href="index.html">HOME</a></li>
+            <li><a class="a-menu"  href="index.html#pag-quemsomos">QUEM SOMOS</a></li>
+            <li><a class="a-menu"  href="#index.html#pag-pilares">PILARES</a></li>
+            <li><a class="a-menu"  href="#index.html#pag-historia">HISTÓRIA</a></li>
+            <form id="search"> 
+                <input id="input_search" type="search" placeholder="Pesquisa...">
+                <button id="buttonsearch" type="submit"><img id="searchimg" src="img/search.png" alt="Icone de lupa"></button>
+            </form>
+        </ul>
+    </div>
         
     </nav>
     
