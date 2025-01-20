@@ -12,3 +12,8 @@ window.addEventListener("scroll", function() {
     let menu = this.document.querySelector('#nav-index')
     menu.classList.toggle('rolagem',window.scrollY > 650)
 })
+
+function toggleMenu() {
+    var nav = document.getElementById("nav");
+    nav.classList.toggle("show");
+}
