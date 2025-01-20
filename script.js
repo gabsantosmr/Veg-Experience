@@ -10,5 +10,5 @@ function CadastrarEvento() {
 
 window.addEventListener("scroll", function() {
     let menu = this.document.querySelector('#nav-index')
-    menu.classList.toggle('rolagem',window.scrollY > 710)
+    menu.classList.toggle('rolagem',window.scrollY > 650)
 })
