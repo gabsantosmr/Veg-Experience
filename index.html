@@ -14,27 +14,37 @@
 		<!-- Menu -->
 		<nav id="nav-index">
 			<!-- Logo da Veg Experience localizado no menu -->
-			<a href="#">
-				<img id="logo-menu" src="img/logo-veg.png" alt="logo da Veg Experience"/> 
-			</a>
+			<div id="logoAndMenu">
+				<a href="#">
+					<img id="logo-menu" src="img/logo-veg.png" alt="logo da Veg Experience"/> 
+				</a>
 
-			<!-- Navegação -->
-			<ul id="navegacao">
-				<li><a class="a-menu" href="#header">INICIO</a></li>
-				<li><a class="a-menu"  href="#pag-quemsomos">QUEM SOMOS</a></li>
-				<li><a class="a-menu"  href="#pag-pilares">PILARES</a></li>
-				<li><a class="a-menu"  href="#pag-historia">HISTÓRIA</a></li>
-				<li><a class="button" id="link-eventos" href="event.html">EVENTOS</a></li>
-			</ul>
+				<!-- Navegação -->
+				<ul id="navegacao1">
+					<li><a class="a-menu" href="#header">INICIO</a></li>
+					<li><a class="a-menu"  href="#pag-quemsomos">QUEM SOMOS</a></li>
+					<li><a class="a-menu"  href="#pag-pilares">PILARES</a></li>
+					<li><a class="a-menu"  href="#pag-historia">HISTÓRIA</a></li>
+					<li><a class="button" id="link-eventos" href="event.html">EVENTOS</a></li>
+				</ul>
+
+				<!--Menu hambúrguer-->
+				<div class="mobile-menu-icon">
+					<button onclick="menuShow()"><img class="icon" src="img/menu_yellow_36dp.webp"></button>
+				</div>
+			</div>
+
+			<div class="menu-mobile">
+				<ul id="navegacao2">
+					<li><a class="a-menu" href="#header">INICIO</a></li>
+					<li><a class="a-menu"  href="#pag-quemsomos">QUEM SOMOS</a></li>
+					<li><a class="a-menu"  href="#pag-pilares">PILARES</a></li>
+					<li><a class="a-menu"  href="#pag-historia">HISTÓRIA</a></li>
+					<li class="botao-eventos"><a class="button" id="link-eventos" href="event.html">EVENTOS</a></li>
+				</ul>
+			</div>
 		</nav>
 
-		<!-- Menu Hamburguer -->
-		<div id="menu-hamburguer" onclick="toggleMenu()">
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-		
 		<!-- Banner -->
 		<header id="header">
 			<img id="img-banner" src="img/banner.jpg" alt="Logo da Veg Experience no centro, escrito Veg Experience, o futuro é consciente e sustentável" />

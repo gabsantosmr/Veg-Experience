@@ -56,6 +56,20 @@ body {
     cursor: pointer;
 }
 
+#logoAndMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
 /* Títulos */
 h1{
 	font: 1.5rem "Montserrat", sans-serif; 
@@ -132,7 +146,7 @@ ul{
     list-style-type: none;
 }
 
-#navegacao {
+#navegacao1 {
     display: flex;
     align-items: center;
 }
@@ -150,25 +164,6 @@ ul{
 	color: #000;
 	margin-right: 40px;
 }
-
-/* Menu hamburguer */
-#menu-hamburguer {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 25px;
-    height: 20px;
-    cursor: pointer;
-}
-
-#menu-hamburguer div {
-    background-color: #000;
-    height: 3px;
-    width: 100%;
-    margin: 3px 0;
-}
-
 
 /* botão para a página de eventos */
 #link-eventos {
@@ -837,44 +832,67 @@ input[type="reset"]:hover {
 }
 
 @media screen and (max-width: 768px) {
-    /* Ajustes para telas menores */
-    #nav-index, #nav {
-        display: none;
-        width: 100%;
+    #nav-index {
+        display: flex;
         flex-direction: column;
-        background-color: rgb(240, 240, 240);
-        position: absolute;
-        top: 70px;
-        left: 0;
-        z-index: 1;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        justify-content: space-between;
+        background-color: rgb(240, 240, 240);;
     }
 
-    /* Torna o menu visível quando ativado */
-    #nav.show {
-        display: flex;
+    #logoAndMenu {
+        width: 92%;
+        align-items: center;
     }
 
-    #nav-index.show {
-        display: flex;
-    }
-    
-    /* Torna o ícone de menu visível */
-    #menu-hamburguer {
-        display: flex;
-    }
-
-    /* Links de navegação em telas pequenas */
-    #nav .a-menu {
-        margin-right: 0;
-        padding: 15px;
-        text-align: center;
-        width: 100%;
+    #nav-index .a-menu {
         color: #000;
     }
 
-    #nav-index .a-menu, #nav .a-menu {
-        margin-right: 10px;
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #navegacao2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .menu-mobile .a-menu {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .menu-mobile .botao-eventos {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .menu-mobile .botao-eventos a {
+        width: 100%;
+    }
+
+    #link-eventos {
+        margin-right: 20px;
+    }
+
+    .open {
+        display: block;
+    }
+
+    #navegacao1 {
+        display: none;
+    }
+
+    header {
+        margin-top: 88px;
     }
 
     /* Ajuste das imagens nas seções */
@@ -963,16 +981,6 @@ input[type="reset"]:hover {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
-    }
-
-    /* Menu e navegação */
-    #nav-index {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #logo-menu {
-        width: 40vh;
     }
 
     /* Ajustar o formulário de login */
