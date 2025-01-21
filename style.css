@@ -551,6 +551,7 @@ aside {
 .destaque {
     width: 100%;
     margin-bottom: 50px;
+    border-radius: 5px;
 }
 
 .destaque img {
@@ -558,6 +559,7 @@ aside {
     height: 250px;
     object-fit: cover;
     object-position: center;
+    border-radius: 5px 5px 0 0;
 }
 
 .descricao h2 {
@@ -582,12 +584,13 @@ aside {
 }
 
 .descricao {
-    margin-top: -4px;
+    margin-top: -7px;
     padding: 10px;
     border-style: solid;
     border-top: 0;
     border-width: 1px;
     border-color: #c4c4c4;
+    border-radius: 0 0 5px 5px;
 }
 
 /* Cards pequenos */
@@ -597,15 +600,17 @@ aside {
     gap: 20px;
     justify-content: center;
     margin-bottom: 50px;
+    border-radius: 5px;
 }
 
 .descricao2 {
-    margin-top: -4px;
+    margin-top: -7px;
     padding: 10px;
     border-style: solid;
     border-top: 0;
     border-width: 1px;
     border-color: #c4c4c4;
+    border-radius: 0 0 5px 5px;
 }
 
 .descricao2 h3 {
@@ -615,6 +620,7 @@ aside {
 .card {
     flex: 1 1 calc(33.333% - 16px);
     max-width: calc(33.333% - 16px);
+    border-radius: 5px;
 }
 
 .card img {
@@ -622,6 +628,7 @@ aside {
     height: 250px;
     object-fit: cover;
     object-position: center;
+    border-radius: 5px 5px 0 0;
 }
 
 .outrospebutton {
