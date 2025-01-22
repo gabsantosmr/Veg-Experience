@@ -35,6 +35,60 @@
 }
 
 @media screen and (max-width: 768px) {
+    .button {
+        font: 1rem "Montserrat", sans-serif; 
+        color: #FFF;
+        background-color: #71842A;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .button-desative{
+        font: 1rem "Montserrat", sans-serif; 
+        color: #FFF;
+        background-color: #c4c4c4;
+        padding: 10px;
+        cursor: default;
+        border-radius: 5px;
+    }
+    
+    #buttonsearch {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 40px;
+    }
+
+    #buttonsearch img {
+        width: 30px;
+    }
+    
+    .botao3 {
+        padding: 7px 20px;
+        background-color: #ffffff;
+        border-width: 1px;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        font: 1rem "Montserrat", sans-serif; 
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #botao-whatsapp {
+        width: 70px;
+    }
+
+    #botao-instagram {
+        width: 50px;
+    }
+
+    #logo-menu {
+        width: 130px;
+    }
+
     #nav-index {
         display: flex;
         flex-direction: column;
@@ -171,7 +225,10 @@
     }
 
     .outros .card {
-        max-width: calc(100% - 16px);
+        flex-direction: column;
+        width: 100%;
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .foto-apoiadores, #deligusta, #greenpeace {
