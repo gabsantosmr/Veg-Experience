@@ -606,11 +606,6 @@ aside {
 .descricao2 {
     margin-top: -7px;
     padding: 10px;
-    border-style: solid;
-    border-top: 0;
-    border-width: 1px;
-    border-color: #c4c4c4;
-    border-radius: 0 0 5px 5px;
 }
 
 .descricao2 h3 {
@@ -651,6 +646,14 @@ aside {
     object-position: top;
 }
 
+#carouselExample {
+    margin-top: 30px;
+}
+
+.carousel img {
+    height: 500px; /* Ajuste a altura do carrossel */
+    object-fit: cover; /* Faz a imagem preencher o espaço de forma proporcional */
+  }
 
 /* Página de login */
 
