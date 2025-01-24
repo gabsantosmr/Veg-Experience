@@ -9,27 +9,29 @@
 		<title>Veg Experience</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="responsividade.css" />
 	</head>
 	<body>
 		<!-- Menu -->
-		<nav>
+		<nav id="nav-index">
 			<!-- Logo da Veg Experience localizado no menu -->
-			<a href="#">
-				<img id="logo-menu" src="img/logo-veg.png" alt="logo da Veg Experience"/> 
-			</a>
+			<div id="logoAndMenu">
+				<a href="#">
+					<img id="logo-menu" src="img/logo-veg.png" alt="logo da Veg Experience"/> 
+				</a>
 
 			<!-- Navegação -->
-			<ul class="navegacao">
+			<ul id="navegacao">
 				<li><a class="a-menu" href="">HOME</a></li>
 				<li><a class="a-menu"  href="#pag-quemsomos">QUEM SOMOS</a></li>
 				<li><a class="a-menu"  href="#pag-pilares">PILARES</a></li>
 				<li><a class="a-menu"  href="#pag-historia">HISTÓRIA</a></li>
-				<a class="button" id="link-eventos" href="event.html">EVENTOS</a>
+				<li><a class="button" id="link-eventos" href="event.html">EVENTOS</a></li>
 			</ul>
 		</nav>
-		
+
 		<!-- Banner -->
-		<header>
+		<header id="header">
 			<img id="img-banner" src="img/banner.jpg" alt="Logo da Veg Experience no centro, escrito Veg Experience, o futuro é consciente e sustentável" />
 		</header>
 
@@ -143,14 +145,17 @@
 			</div>
 		</section>
 
-		<!-- Botão flutuante do whatsapp -->
-		<a href="https://api.whatsapp.com/send?phone=5561981677132" target="_blank"><img id="botao-whatsapp" src="img/botao-whatsapp.png" alt="Ícone do Whatsapp" /></a>
+		    <!-- Botão flutuante do whatsapp e instagram -->
+			<div id="whatsapp-e-instagram">
+				<a href="https://api.whatsapp.com/send?phone=5561981677132" target="_blank"><img id="botao-whatsapp" src="img/botao-whatsapp.png" alt="Ícone do Whatsapp" /></a>
+				<a href="https://www.instagram.com/experience.veg/" target="_blank"><img id="botao-instagram" src="img/botao-instagram.png" alt="Ícone do instagram" /></a>
+			</div>
 
 		<!-- Rodapé -->
 		<footer>
 			<div id="content">
 				<div id="logo-rodape"><img src="img/logo-rodape.jpg" alt=""><p>VEG EXPERIENCE</p></div>
-				<h2 id="slogan">O FUTURO É CONSCIENTE E SUSTENTÁVEL</h2>
+				<h2 id="slogan">o futuro é consciente e sustentável</h2>
 				<div id="redes">
 					<a href="https://www.instagram.com/experience.veg/" target="_blank"><img id="instagram" src="img/instagram.png" alt=""></a>
 					<a href="https://www.youtube.com/@vegexperience" target="_blank"><img id="youtube" src="img/youtube.png" alt=""></a>
@@ -160,5 +165,6 @@
 				<p>© 2024 - Veg Experience</p>
 			</div>
 		</footer>
+		<script src="script.js"></script>
 	</body>
 </html>
