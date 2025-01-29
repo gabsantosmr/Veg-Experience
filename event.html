@@ -23,6 +23,7 @@
         <!-- Navegação -->        
 
         <div id="navegacao">
+            <input id="search" type="text" class="input-field" placeholder="ENCONTRE SEU EVENTO">
             <a class="button" id="buttonsearch"><img id="searchimg" src="img/search.png" alt="Icone de lupa"></a>
         </div>
     </nav>
@@ -52,8 +53,8 @@
     </div>
     
     <main>
-        <div class="outros" id="cards">
-            <div class="card">
+        <ul class="outros" id="cards">
+            <li class="card">
                 <img src="img/vegseminario.png" alt="">
                 <div class="descricao2">
                     <h3>Veg Seminário</h3>
@@ -62,8 +63,8 @@
                         <a class="button" href="https://www.sympla.com.br/evento/a-jornada-veg-pelas-pessoas/2432490?referrer=www.google.com">INSCREVA-SE</a>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
                 <img src="img/vegseminario.png" alt="">
                 <div class="descricao2">
                     <h3>Veg Seminário</h3>
@@ -72,8 +73,8 @@
                         <a class="button-desative">ENCERRADO</a>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
                 <img src="img/pelosanimais.png" alt="">
                 <div class="descricao2">
                     <h3>Veg Experience: A jornada - Pelos Animais</h3>
@@ -82,8 +83,8 @@
                         <a class="button-desative">ENCERRADO</a>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
                 <img src="img/papelreciclado.jpg" alt="">
                 <div class="descricao2">
                     <h3>Oficina de Papel Reciclado</h3>
@@ -92,8 +93,8 @@
                         <a class="button-desative">ENCERRADO</a>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
                 <img src="img/pelaspessoas.jpg" alt="">
                 <div class="descricao2">
                     <h3>Veg Experience: A jornada - Pelas Pessoas</h3>
@@ -102,8 +103,8 @@
                         <a class="button-desative">ENCERRADO</a>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
                 <img src="img/meverao.jpg" alt="">
                 <div class="descricao2">
                     <h3>Projeto MeVerão 2024</h3>
@@ -112,8 +113,8 @@
                         <a class="button-desative">ENCERRADO</a>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
                 <img id="floreser" src="img/flor&ser.jpg" alt="">
                 <div class="descricao2">
                     <h3>Desfile Social Flor&Ser</h3>
@@ -122,8 +123,8 @@
                         <a class="button-desative">ENCERRADO</a>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
                 <img src="img/desfilemodaconciente.jpg" alt="">
                 <div class="descricao2">
                     <h3>Desfile de Moda Consciente</h3>
@@ -132,8 +133,8 @@
                         <a class="button-desative">ENCERRADO</a>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
                 <img src="img/recriarelibertar.jpg" alt="">
                 <div class="descricao2">
                     <h3>Oficina Recriar é Libertar</h3>
@@ -142,8 +143,8 @@
                         <a class="button-desative">ENCERRADO</a>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
                 <img src="img/desfilesocial.jpg" alt="">
                 <div class="descricao2">
                     <h3>Desfile Social #VegBem40</h3>
@@ -152,8 +153,11 @@
                         <a class="button-desative">ENCERRADO</a>
                     </div>
                 </div>
-            </div>
-        </div>
+            </li>
+            <li id="no-results">
+                <p>Nenhum evento encontrado</p>
+            </li>
+        </ul>
     </main>
     <!-- Botão flutuante do whatsapp e instagram -->
     <div id="whatsapp-e-instagram">

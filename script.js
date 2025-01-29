@@ -24,3 +24,30 @@ function menuShow() {
         document.querySelector('.icon').src = "img/close_yellow_36dp.webp"
     }
 }
+
+const searchInput = document.getElementById('search');
+searchInput.addEventListener('input', (event) => {
+    const value = event.target.value;
+    const items = document.querySelectorAll('.outros .card');
+    const noResults = document.getElementById('no-results');
+    let hasResults = false;
+
+    items.forEach(card => {
+        if(formatString(card.textContent).indexOf(value) !== -1) {
+            card.style.display = 'flex';
+            hasResults = true;
+        } else {
+            card.style.display = 'none';
+        }
+    })
+
+    if (hasResults) {
+        noResults.style.display = 'none';
+    } else {
+        noResults.style.display = 'block';
+    }
+});
+
+function formatString(value) {
+    return value.toLowerCase().trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}

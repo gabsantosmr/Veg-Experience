@@ -158,6 +158,12 @@ ul {
     align-items: center;
 }
 
+#navegacao input {
+    margin-bottom: 0px;
+    margin-right: 15px;
+    width: 200px;
+}
+
 #nav-index .a-menu{
 	text-decoration: none;
 	font: 1.2rem "Montserrat", sans-serif; 
@@ -665,6 +671,9 @@ aside {
 }
 
 /* Página de eventos */
+#no-results {
+    display: none;
+}
 
 #floreser {
     object-position: top;
