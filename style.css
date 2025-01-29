@@ -5,6 +5,7 @@
     margin: 0px;
     scroll-behavior: smooth;
     transition: all 0.3s ease;
+    box-sizing: inherit;
 }
 
 body {
