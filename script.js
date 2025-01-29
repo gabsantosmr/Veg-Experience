@@ -1,8 +1,3 @@
-window.addEventListener("scroll", function() {
-    let menu = this.document.querySelector('#nav-index')
-    menu.classList.toggle('rolagem',window.scrollY > 650)
-})
-
 function CadastrarEvento() {
     var nome = document.getElementById('nomeevento').value;
     var imagem = document.getElementById('campoimagem').value;
@@ -12,6 +7,11 @@ function CadastrarEvento() {
     "<div class='card'><img src='" + imagem + "' alt=''><div class='descricao2'><h3>" + nome + "</h3><p>" + inicio + " - " + fim + "</p></div></div>";
 
 }
+
+window.addEventListener("scroll", function() {
+    let menu = this.document.querySelector('#nav-index')
+    menu.classList.toggle('rolagem',window.scrollY > 650)
+})
 
 function menuShow() {
     let menuMobile = document.querySelector('.menu-mobile');
