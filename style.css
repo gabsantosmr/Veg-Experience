@@ -18,6 +18,8 @@ body {
 	color: #FFF;
 	background-color: #71842A;
 	padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .button-desative{
@@ -90,7 +92,7 @@ h2{
 /* Titulos dos eventos */
 h3 {
     font: 1.5rem "Montserrat", sans-serif; 
-    font-weight: 600px;
+    font-weight: 600;
 }
 
 /* links */
@@ -112,7 +114,20 @@ p {
 }
 
 /* Navegação */
-nav{
+#nav-index{
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .5s;
+}
+
+#nav{
 	width: 100%;
 	background-color: #f2f2f2;
 	padding: 20px;
