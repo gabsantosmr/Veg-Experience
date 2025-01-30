@@ -1,53 +1,87 @@
-function CadastrarEvento() {
-    var nome = document.getElementById('nomeevento').value;
-    var imagem = document.getElementById('campoimagem').value;
-    var inicio = document.getElementById('datainicio').value;
-    var fim = document.getElementById('datafinal').value;
-    document.getElementById('cards') = 
-    "<div class='card'><img src='" + imagem + "' alt=''><div class='descricao2'><h3>" + nome + "</h3><p>" + inicio + " - " + fim + "</p></div></div>";
-
-}
-
-window.addEventListener("scroll", function() {
-    let menu = this.document.querySelector('#nav-index')
-    menu.classList.toggle('rolagem',window.scrollY > 650)
-})
-
-function menuShow() {
-    let menuMobile = document.querySelector('.menu-mobile');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        
-        document.querySelector('.icon').src = "img/menu_yellow_36dp.webp"
-    } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "img/close_yellow_36dp.webp"
+class ScrollHandler {
+    constructor(menuId, scrollClass, scrollThreshold) {
+        this.menu = document.querySelector(menuId);
+        this.scrollClass = scrollClass;
+        this.scrollThreshold = scrollThreshold;
+        this.init();
     }
-}
 
-const searchInput = document.getElementById('search');
-searchInput.addEventListener('input', (event) => {
-    const value = event.target.value;
-    const items = document.querySelectorAll('.outros .card');
-    const noResults = document.getElementById('no-results');
-    let hasResults = false;
+    init() {
+        window.addEventListener('scroll', () => this.toggleMenuOnScroll());
+    }
 
-    items.forEach(card => {
-        if(formatString(card.textContent).indexOf(value) !== -1) {
-            card.style.display = 'flex';
-            hasResults = true;
-        } else {
-            card.style.display = 'none';
+    toggleMenuOnScroll() {
+        if (this.menu) {
+            this.menu.classList.toggle(this.scrollClass, window.scrollY > this.scrollThreshold);
         }
-    })
-
-    if (hasResults) {
-        noResults.style.display = 'none';
-    } else {
-        noResults.style.display = 'block';
     }
-});
-
-function formatString(value) {
-    return value.toLowerCase().trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
+
+class MobileMenu {
+    constructor(iconSelector, menuSelector, openIcon, closeIcon) {
+        this.icon = document.querySelector(iconSelector);
+        this.menuMobile = document.querySelector(menuSelector);
+        this.openIcon = openIcon;
+        this.closeIcon = closeIcon;
+        this.init();
+    }
+
+    init() {
+        if (this.icon) {
+            this.icon.addEventListener('click', () => this.toggleMenu());
+        }
+    }
+
+    toggleMenu() {
+        if (this.menuMobile.classList.contains('open')) {
+            this.menuMobile.classList.remove('open');
+            this.icon.querySelector('img').src = this.openIcon;
+        } else {
+            this.menuMobile.classList.add('open');
+            this.icon.querySelector('img').src = this.closeIcon;
+        }
+    }
+}
+
+class Search {
+    constructor(searchInputId, cardContainerSelector, noResultsId) {
+        this.searchInput = document.getElementById(searchInputId);
+        this.items = document.querySelectorAll(`${cardContainerSelector} .card`);
+        this.noResults = document.getElementById(noResultsId);
+        this.init();
+    }
+
+    init() {
+        if (this.searchInput) {
+            this.searchInput.addEventListener('input', (event) => this.filterItems(event));
+        }
+    }
+
+    filterItems(event) {
+        const value = this.formatString(event.target.value);
+        let hasResults = false;
+
+        this.items.forEach(card => {
+            const cardText = this.formatString(card.textContent || card.innerText);
+            if (cardText.includes(value)) {
+                card.style.display = 'flex';
+                hasResults = true;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        if (this.noResults) {
+            this.noResults.style.display = hasResults ? 'none' : 'block';
+        }
+    }
+
+    formatString(value) {
+        return value.toLowerCase().trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+}
+
+// Instanciando as classes
+const scrollHandler = new ScrollHandler('#nav-index', 'rolagem', 650);
+const mobileMenu = new MobileMenu('.icon', '.menu-mobile', 'img/menu_yellow_36dp.webp', 'img/close_yellow_36dp.webp');
+const search = new Search('search', '.outros', 'no-results');
