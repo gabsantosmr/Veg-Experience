@@ -82,6 +82,7 @@ class Search {
 }
 
 // Instanciando as classes
-const scrollHandler = new ScrollHandler('#nav-index', 'rolagem', 650);
+const scrollHandlerIndex = new ScrollHandler('#nav-index', 'rolagem', 650);
+const scrollHandlerEvent = new ScrollHandler('#nav-event', 'rolagem', 400);
 const mobileMenu = new MobileMenu('.icon', '.menu-mobile', 'img/menu_yellow_36dp.webp', 'img/close_yellow_36dp.webp');
 const search = new Search('search', '.outros', 'no-results');
