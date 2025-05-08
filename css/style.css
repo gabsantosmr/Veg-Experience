@@ -104,7 +104,6 @@ a{
 
 p {
     font: 1.3rem "Montserrat", sans-serif; 
-    text-align: justify;
     color: #333333;
 }
 
@@ -115,7 +114,7 @@ p {
 }
 
 /* Navegação */
-#nav-index{
+#nav-index, #nav-event{
 	width: 100%;
 	padding: 20px;
 	display: flex;
@@ -141,12 +140,16 @@ p {
     z-index: 1;
 }
 
-#nav-index.rolagem {
+#nav-index.rolagem, #nav-event.rolagem {
     background-color: #f2f2f2;
 }
 
-#nav-index.rolagem .a-menu {
+#nav-index.rolagem .a-menu, #nav-event.rolagem .a-menu {
     color: #000;
+}
+
+#nav-index.rolagem .a-menu:hover, #nav-event.rolagem .a-menu:hover {
+    color: #71842A;
 }
 
 ul {
@@ -164,10 +167,17 @@ ul {
     width: 200px;
 }
 
-#nav-index .a-menu{
+#nav-index .a-menu, #nav-event .a-menu{
 	text-decoration: none;
 	font: 1.2rem "Montserrat", sans-serif; 
 	color: #fff;
+	margin-right: 40px;
+}
+
+#nav-index .a-menu:hover, #nav-event .a-menu:hover{
+	text-decoration: none;
+	font: 1.2rem "Montserrat", sans-serif; 
+	color: #71842A;
 	margin-right: 40px;
 }
 
@@ -632,6 +642,7 @@ aside {
     justify-content: center;
     margin-bottom: 50px;
     border-radius: 5px;
+    padding-left: 0;
 }
 
 .descricao2 {
@@ -673,6 +684,23 @@ aside {
 }
 
 /* Página de eventos */
+#cabecalho-eventos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#cabecalho-eventos div {
+    display: flex;
+    align-items: center;
+}
+
+#cabecalho-eventos input {
+    margin-bottom: 0px;
+    margin-right: 15px;
+    width: 200px;
+}
+
 #no-results {
     display: none;
 }
@@ -681,14 +709,15 @@ aside {
     object-position: top;
 }
 
-#carouselExample {
-    margin-top: 30px;
-}
-
 .carousel img {
-    height: 500px; /* Ajuste a altura do carrossel */
+    height: 700px;
     object-fit: cover; /* Faz a imagem preencher o espaço de forma proporcional */
   }
+
+.carousel-control-prev {
+    height: 75%;
+    align-self: center;
+}
 
 /* Página de login */
 
