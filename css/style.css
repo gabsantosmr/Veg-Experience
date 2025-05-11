@@ -161,12 +161,6 @@ ul {
     align-items: center;
 }
 
-#navegacao input {
-    margin-bottom: 0px;
-    margin-right: 15px;
-    width: 200px;
-}
-
 #nav-index .a-menu, #nav-event .a-menu{
 	text-decoration: none;
 	font: 1.2rem "Montserrat", sans-serif; 
@@ -193,100 +187,89 @@ ul {
     margin-right: 40px;
 }
 
-/* botão de procurar da página de eventos */
-#buttonsearch {
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    border-radius: 50%;
-    margin-right: 40px;
-}
-
-#buttonsearch:hover {
-    cursor: pointer;
-}
-
-#searchimg {
-   width: 4vh;
-}
-
-#input_search{
-    width: 200px;
-    height: 35px;
-    font: 0.8rem "Montserrat", sans-serif; 
-    align-items: center;
-    border-radius:  0.5vh  0vh 0vh 0.5vh;
-    margin: 0px;
-}
-
 #userimg {
     width: 60px;
     margin-right: 40px;
 }
 
 /* rodapé */
-footer {
-	width: 100%;
-    background-color: #D49F5D;
-	margin-bottom: 30px;
-	padding-bottom: 30px;
-	margin: 0px;
+.footer p {
+    color: #fff;
 }
 
-#content {
+.footer {
+    background-color: #D49F5D;
+    padding: 30px 20px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+  }
+  
+  .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-	padding: 30px;
-}
-
-#logo-rodape {
-    width: 20%;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .footer-logo {
     display: flex;
     align-items: center;
-	padding: 0 auto;
-}
-
-#logo-rodape img {
-    width: 15vh;
-}
-
-#logo-rodape p {
-    font: 0.6rem "Montserrat", sans-serif; 
-    font-size: medium;
-    color: white;
-}
-
-#slogan {
-    font-size: large;
-    font: 1.5rem "Montserrat", sans-serif; 
-    width: 60%;
-    text-align: center;
-    color: #ffffff;
-}
-
-#redes {
-    width: 20%;
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-}
-
-#instagram {
+    gap: 10px;
+    flex: 1;
+  }
+  
+  .footer-logo img {
     width: 60px;
-}
-
-#youtube {
-    width: 60px;
-}
-
-#copyright p {
-    margin-top: 40px;
+    height: auto;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .footer-slogan {
+    width: 100%;  /* A largura total da página */
+    text-align: center; /* Centraliza o texto dentro dessa largura */
+    font-size: 1.3rem;
+    position: absolute;
+    margin: 0;
+    flex: 2;
+  }
+  
+  .footer-social a {
+    margin: 0 10px;
+  }
+  
+  .footer-social img {
+    width: 40px;
+    transition: transform 0.3s;
+  }
+  
+  .footer-social img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-copy {
+    margin-top: 30px;
     text-align: center;
-    color: white;
-    font: 1rem "Montserrat", sans-serif; 
-    font-size: larger;
-}
+    font-size: 1rem;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 30px;
+  }
+  
 
 /*Index*/
 
@@ -297,7 +280,7 @@ footer {
 }
 
 /* Definindo padding para todas as seções da página */
-main, #pag-noticias, #pag-pilares, #pag-historia {
+#pag-quemsomos, .card-eventos, #pag-noticias, #pag-pilares, #pag-historia {
 	padding: 100px;
 }
 
@@ -439,13 +422,13 @@ main, #pag-noticias, #pag-pilares, #pag-historia {
 	width: 45%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 2px;
+    gap: 10px;
 	padding-left: 50px;
     align-items: center;
 }
 
 .coluna-historia {
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 
@@ -507,6 +490,7 @@ main, #pag-noticias, #pag-pilares, #pag-historia {
     position: fixed;
 	bottom: 40px;
 	right: 20px;
+    z-index: 1;
 }
 #botao-whatsapp{
 	width: 100px;
@@ -642,7 +626,6 @@ aside {
     justify-content: center;
     margin-bottom: 50px;
     border-radius: 5px;
-    padding-left: 0;
 }
 
 .descricao2 {
@@ -688,6 +671,9 @@ aside {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    background-color: #71842A;
+    padding: 30px 100px;
+    color: #fff;
 }
 
 #cabecalho-eventos div {
@@ -699,6 +685,51 @@ aside {
     margin-bottom: 0px;
     margin-right: 15px;
     width: 200px;
+}
+
+/* From Uiverse.io by alexruix */ 
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+}
+   
+.input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+   
+.input::placeholder {
+    color: #9e9ea7;
+}
+   
+.input:focus, input:hover {
+    outline: none;
+    border-color: #71842A;
+    background-color: #fff;
+}
+   
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}   
+
+.card-eventos {
+    padding-top: 20px;
 }
 
 #no-results {
