@@ -572,6 +572,10 @@ aside {
 
 /* Eventos da página do usuário */
 
+main {
+    padding: 50px;
+}
+
 /* Cards grandes */
 .destaque {
     width: 100%;
